@@ -1,0 +1,50 @@
+/* shared variables */
+@header-footer-background: #6496B1;
+
+@pure-white: #ffffff;
+
+/* dashboard */
+@tile-background: #F0F0F0;
+@tile-background-hover: #E6E6E6;
+
+/* mixins */
+.text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.title-font() {
+    font-size: 22px;
+    font-family: glyphicons-halflings-regular;    
+}
+
+.normal-font() {
+    font-size: 12px;
+    font-family: glyphicons-halflings-regular;    
+}
+
+.gradient_background(@top, @bottom, @middle:#ffffff) {
+  background: @top; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(@top, @middle, @bottom); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(@top, @middle, @bottom); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(@top, @middle, @bottom); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(@top, @middle, @bottom); /* Standard syntax */
+}
+
+.spinner(@size, @border, @color) {
+  border: @border solid #f3f3f3; /* Light grey */
+  border-top: @border solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: @size;
+  height: @size;
+  animation: spin 2s linear infinite;
+
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+
+
