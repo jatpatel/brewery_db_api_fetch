@@ -1,4 +1,4 @@
-# Typescript & Durandal Demo application
+# BreweryDB api fetch demo
 
 This application is for demostration purpose only...
 
@@ -14,7 +14,6 @@ resources - beer_resources.rb
 services - brewery_db_client
 
 to fetch beer resource using gem HTTParty 
-
 ```
  
 UI powered by Typescript, Knockout, Durandal and gulp
